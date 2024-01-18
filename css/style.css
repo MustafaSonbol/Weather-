@@ -1,0 +1,164 @@
+.main-color {
+  --main-color: #1e202b;
+}
+body {
+  background-color: #1e202b;
+}
+nav a h1 {
+  font-size: 17px;
+}
+nav a small {
+  font-size: 11px;
+}
+.navbar-brand img {
+  width: 62px;
+  height: 44px;
+}
+#display {
+  background-image: url(../imgs/banner.png);
+  background-position: top center;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+ padding-top: 10px !important;
+}
+.search {
+  background-color: #1e202b !important;
+}
+.card-header {
+  background-color: #2d303d;
+}
+.card-body {
+  background-color: #323544;
+}
+.search-box {
+  background-color: #1e202b;
+}
+#citySearch {
+  background-color: #1e202b;
+  border: 0;
+  outline: none !important;
+}
+#citySearch::placeholder {
+  color: white;
+}
+.secondDay {
+  background-color: #262936;
+}
+.day2 {
+  background-color: #222530;
+}
+#firstDayMainDeg {
+  font-size: 6rem;
+  font-weight: 600;
+}
+#firstDayMainDeg .bigO {
+  font-size: 2.4285714286rem;
+}
+#cityName {
+  font-size: 1.2857142857em;
+}
+/* ~----------------------------------------------------Second day style-----------------------------------------------------------  */
+.maxDeg {
+  font-size: 1.7142857143em;
+  font-weight: 600;
+}
+.smallO {
+  top: -0.5em;
+  font-size: small;
+}
+.smallO2 {
+  top: -0.5em;
+  font-size: small;
+}
+.soSmallO {
+  font-size: x-small;
+}
+.card {
+  height: 100% !important;
+}
+/* ~----------------------------------------------------footer style-----------------------------------------------------------  */
+footer {
+  background-color: #262936;
+}
+footer input {
+  background-color: #1e202b !important;
+  outline: none !important;
+}
+footer input::placeholder {
+  color: white !important;
+}
+footer form {
+  background-color: #1e202b !important;
+}
+.social .mx-1 {
+  background-color: #1e202b;
+  border-color: #1e202b !important;
+  transition: all 0.5s;
+}
+.social .mx-1:hover {
+  background-color: #009ad8;
+  border-color: #009ad8 !important;
+}
+i {
+  cursor: pointer;
+  font-size: 18px !important;
+  transition: all 0.5s;
+}
+.social .mx-1:hover i {
+  color: white !important;
+}
+/* ~----------------------------------------------------footer style-----------------------------------------------------------  */
+.bread {
+  background-color: #262936;
+}
+/* #crumb{
+  --bs-breadcrumb-divider: '----->'
+} */
+/* &---------------------------------------------------contact page--------------------------------------------------------------------  */
+
+/* ~----------------------------------------------------form style-----------------------------------------------------------  */
+#apiForm input {
+  color: #757567 !important;
+  padding: 4% 5% !important;
+  border: 3px solid #757567 !important;
+  background: transparent !important;
+  transition: all 0.5s;
+}
+#apiForm input:hover {
+  border: 3px solid #009ad8 !important;
+}
+#apiForm input::placeholder {
+  color: #757567 !important;
+}
+textarea {
+  color: #757567 !important;
+  border: 3px solid #757567 !important;
+  background: transparent !important;
+  transition: all 0.5s;
+}
+textarea::placeholder {
+  color: #757567 !important;
+}
+textarea:hover {
+  border: 3px solid #009ad8 !important;
+}
+.disc {
+  color: #bfc1aa;
+}
+.c-info i {
+  color: aqua;
+}
+.c-info {
+  background-color: #262936;
+}
+/* ~----------------------------------------------------spinner-----------------------------------------------------------  */
+#load{
+  font-size: 70px !important;
+  color: #009ad8 !important;
+}
+.spinIcon{
+width: auto !important;
+height: auto !important;
+top: 50%  !important;
+right: 50% !important;
+}

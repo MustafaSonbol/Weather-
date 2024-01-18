@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/4e0ed8390d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--? ===============================================spinner======================================================-->
+    <div id="loader" class="spinIcon position-fixed z-3">
+        <i id="load" class="fa-solid fa-spinner fa-spin-pulse"></i>
+    </div>
+    <!--^`````````````````````````````````````````````````````NavBar```````````````````````````````````````````````````````-->
+    <nav class="navbar navbar-dark navbar-expand-lg py-5">
+        <div class="container px-5">
+            <a class="navbar-brand d-flex" href="index.html"><img src="imgs/logo@2x.png" alt="">
+                <div class=" ps-2 d-flex flex-column">
+                    <h1 class="site-title">Weather</h1>
+                    <small class="site-description">tagline goes here</small>
+                </div>
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto my-3">
+                    <a class=" btn btn-outline-info text-white mx-4 my-2 rounded-pill" href="index.html">Home</a>
+                    <a class="btn btn-outline-info text-white mx-4 my-2 rounded-pill" href="#">News</a>
+                    <a class="btn btn-outline-info text-white mx-4 my-2 rounded-pill" href="#">Live
+                        camera</a>
+                    <a class="btn btn-outline-info text-white mx-4 my-2 rounded-pill" href="#">Photos</a>
+                    <a class="btn btn-outline-info text-white mx-4 my-2 rounded-pill" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--^`````````````````````````````````````````````````````Search Input```````````````````````````````````````````````````````-->
+    <section id="display">
+        <div class="container p-md-5">
+            <div class="search-box rounded-pill d-flex my-5 p-1 overflow-hidden">
+                <input type="text" class="form-control text-white shadow-none" placeholder="Find Your Location..."
+                    id="citySearch">
+                <button class="btn btn-info w-25 rounded-pill text-white" id="findBtn">Clear</button>
+            </div>
+            <!--^`````````````````````````````````````````````````````weather display```````````````````````````````````````````````````````-->
+            <div id="errorMsg" class="errorMsg text-center text-bg-danger w-75 m-auto"></div>
+            <div id="row" class="row px-3 mb-5 overflow-hidden d-none">
+                <!--~`````````````````````````````````````````````````````Current Day```````````````````````````````````````````````````````-->
+                <div class="col-sm-12 col-md-6 col-lg-4 p-0">
+                    <div id="currentDay" class="card border-0 rounded-top-3 text-white">
+                        <!-- <div class="card-header d-flex justify-content-between">
+                            <span>Sunday</span>
+                            <span>31,December</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text" id="cityName">Cairo</p>
+                            <div class="main-display d-flex flex-column">
+                                <span id="firstDayMainDeg" class="text-nowrap">17<span class="bigO position-absolute">o</span>C</span>
+                                <img src="imgs/113.webp" width="90" alt="">
+                            </div>
+                            <h6 class="text-info">Clear</h6>
+                            <div class="imgs-info d-flex justify-content-between pe-5 me-5">
+                                <div>
+                                    <img src="imgs/icon-umberella.png" alt="">
+                                    <span>20%</span>
+                                </div>
+                                <div>
+                                    <img src="imgs/icon-wind.png" alt="">
+                                    <span>18km/h</span>
+                                </div>
+                                <div>
+                                    <img src="imgs/icon-compass.png" alt="">
+                                    <span>East</span>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!--~````````````````````````````````````````````````````` Day 2```````````````````````````````````````````````````````-->
+                <div id="day2" class="col-sm-12 col-md-6 col-lg-4 p-0 bg-danger-subtle">
+                    <!-- <div class="card border-0 rounded-top-3 text-center text-white">
+                        <div class="card-header day2">
+                            <span>Monday</span>
+                        </div>
+                        <div class="card-body secondDay d-flex flex-column">
+                            <div class="my-2">
+                                <img src="imgs/113.webp" alt="">
+                            </div>
+                            <div class="py-3 d-flex flex-column">
+                                <span class="maxDeg position-relative nums">17 <span
+                                        class="smallO position-absolute">o</span>C</span>
+                                <span class="minDeg position-relative">13.5 <span
+                                        class="soSmallO position-absolute">o</span> </span>
+                            </div>
+                            <h6 class="text-info">Patchy rain possible</h6>
+                        </div>
+                    </div> -->
+                </div>
+                <!--~````````````````````````````````````````````````````` Day 3```````````````````````````````````````````````````````-->
+                <div id="day3" class="col-sm-12 col-md-6 col-lg-4 p-0">
+                    <!-- <div class="card border-0 rounded-top-3 text-center text-white">
+                        <div class="card-header">
+                            <span>Monday</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="my-2">
+                                <img src="imgs/113.webp" alt="">
+                            </div>
+                            <div class="py-3 d-flex flex-column">
+                                <span class="maxDeg position-relative nums">17 <span
+                                        class="smallO2 position-absolute">o</span>C</span>
+                                <span class="minDeg position-relative">13.5 <span
+                                        class="soSmallO position-absolute">o</span> </span>
+                            </div>
+                            <h6 class="text-info">Patchy rain possible</h6>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--^`````````````````````````````````````````````````````footer ```````````````````````````````````````````````````````-->
+    <footer>
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <form
+                        class="form-control p-1 my-4 border-0 rounded-pill d-flex justify-content-between overflow-hidden">
+                        <input class="border-0 form-control text-white shadow-none" type="email"
+                            placeholder="Enter Your Email to Subscribe...">
+                        <button class="btn btn-info px-2 py-1 rounded-pill text-white">Subscribe</button>
+                    </form>
+                    <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="social d-flex my-5">
+                        <div
+                            class="p-2 border mx-1 border-1 rounded-circle d-flex justify-content-center align-items-center">
+                            <i role="link" class="fa fa-facebook fa-fw text-info"></i>
+                        </div>
+                        <div
+                            class="p-2 border mx-1 border-1 rounded-circle d-flex justify-content-center align-items-center">
+                            <i role="link" class="fa fa-twitter fa-fw text-info"></i>
+                        </div>
+                        <div
+                            class="p-2 border mx-1 border-1 rounded-circle d-flex justify-content-center align-items-center">
+                            <i role="link" class="fa fa-google-plus fa-fw text-info"></i>
+                        </div>
+                        <div
+                            class="p-2 border mx-1 border-1 rounded-circle d-flex justify-content-center align-items-center">
+                            <i role="link" class="fa fa-pinterest fa-fw text-info"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

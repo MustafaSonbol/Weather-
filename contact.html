@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/4e0ed8390d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--^`````````````````````````````````````````````````````navbar ```````````````````````````````````````````````````````-->
+    <nav class="navbar navbar-dark navbar-expand-lg py-5">
+        <div class="container px-5">
+            <a class="navbar-brand d-flex" href="index.html"><img src="imgs/logo@2x.png" alt="">
+                <div class=" ps-2 d-flex flex-column">
+                    <h1 class="site-title">Weather</h1>
+                    <small class="site-description">tagline goes here</small>
+                </div>
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto my-3">
+                    <a class=" btn btn-outline-info text-white mx-4 my-2 rounded-pill" href="index.html">Home</a>
+                    <a class="btn btn-outline-info text-white mx-4 my-2 rounded-pill" href="#">News</a>
+                    <a class="btn btn-outline-info text-white mx-4 my-2 rounded-pill" href="#">Live
+                        camera</a>
+                    <a class="btn btn-outline-info text-white mx-4 my-2 rounded-pill" href="#">Photos</a>
+                    <a class="btn btn-outline-info text-white mx-4 my-2 rounded-pill" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--^`````````````````````````````````````````````````````breadcrumb ```````````````````````````````````````````````````````-->
+    <div class="container p-5">
+        <div class="bread rounded-pill p-2">
+            <section id="crumb" class="px-3 text-white" style="--bs-breadcrumb-divider: '-->';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-decoration-none text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Contact</li>
+                </ol>
+            </section>
+        </div>
+    </div>
+    <!--^`````````````````````````````````````````````````````contact info ```````````````````````````````````````````````````````-->
+    <div class="container p-5">
+        <div class="row gy-5">
+            <div class="col-md-5">
+                <div class="c-info p-5 rounded-3 text-white d-flex justify-content-center align-items-center">
+                    <ul class="list-unstyled blog-style">
+                        <li class="m-4"><i class="fa-solid fa-location-dot fa-fw"></i> Company Name INC. 2803 Avenue
+                            Street, Los Angeles</li>
+                        <li class="m-4"><i class="fa-solid fa-phone fa-fw"></i> +1 800 314 235</li>
+                        <li class="m-4"><i class="fa-solid fa-envelope fa-fw"></i> <a
+                                class="text-decoration-none text-white" href="">contact@companyname.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="separator col-1 d-block"></div>
+            <!--~`````````````````````````````````````````````````````form ```````````````````````````````````````````````````````-->
+            <div id="apiMedia" class="col-md-6">
+                <h2 class="text-white fs-1">Contact Us</h2>
+                <p class="disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore
+                    ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi
+                    facilis odit hic, ipsum sed!</p>
+                <form id="apiForm" class="row g-3 pb-5">
+                    <div class="col-sm-12 col-lg-6">
+                        <input type="text" class="form-control rounded-pill shadow-none" placeholder="Your Name...">
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <input type="email" class="form-control rounded-pill shadow-none"
+                            placeholder="Email Address...">
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <input type="text" class="form-control rounded-pill shadow-none" placeholder="Company Name...">
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <input type="text" class="form-control rounded-pill shadow-none" placeholder="Website...">
+                    </div>
+
+                    <div class="col-12">
+                        <textarea class="w-100 form-control shadow-none rounded-5" name="message" cols="15" rows="7"
+                            placeholder="Message..."></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-info rounded-pill px-3">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--^`````````````````````````````````````````````````````footer ```````````````````````````````````````````````````````-->
+    <footer>
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <form
+                        class="form-control p-1 my-4 border-0 rounded-pill d-flex justify-content-between overflow-hidden">
+                        <input class="border-0 form-control text-white shadow-none" type="email"
+                            placeholder="Enter Your Email to Subscribe...">
+                        <button class="btn btn-info px-2 py-1 rounded-pill text-white">Subscribe</button>
+                    </form>
+                    <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="social d-flex my-5">
+                        <div
+                            class="p-2 border mx-1 border-1 rounded-circle d-flex justify-content-center align-items-center">
+                            <i role="link" class="fa fa-facebook fa-fw text-info"></i>
+                        </div>
+                        <div
+                            class="p-2 border mx-1 border-1 rounded-circle d-flex justify-content-center align-items-center">
+                            <i role="link" class="fa fa-twitter fa-fw text-info"></i>
+                        </div>
+                        <div
+                            class="p-2 border mx-1 border-1 rounded-circle d-flex justify-content-center align-items-center">
+                            <i role="link" class="fa fa-google-plus fa-fw text-info"></i>
+                        </div>
+                        <div
+                            class="p-2 border mx-1 border-1 rounded-circle d-flex justify-content-center align-items-center">
+                            <i role="link" class="fa fa-pinterest fa-fw text-info"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
